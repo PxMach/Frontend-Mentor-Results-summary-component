@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+   /* ### Primary */
+
+   --Light_red: hsl(0, 100%, 67%);
+   --Orangey_yellow: hsl(39, 100%, 56%);
+   --Green_teal: hsl(166, 100%, 37%);
+   --Cobalt_blue: hsl(234, 85%, 45%);
+
+   /* ## Gradients */
+
+   --Light_slate_blue_background: hsl(252, 100%, 67%);
+   --Light_royal_blue_background: hsl(241, 81%, 54%);
+
+   --Violet_blue_circle: hsla(256, 72%, 46%, 1);
+   --Persian_blue_circle: hsla(241, 72%, 46%, 0);
+
+   /* ### Neutral */
+
+   --White: hsl(0, 0%, 100%);
+   --Pale_blue: hsl(221, 100%, 96%);
+   --Light_lavender: hsl(241, 100%, 89%);
+   --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+* {
+   font-family: "Hanken Grotesk", sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: var(--Pale_blue);
+}
+
+.container {
+   background-color: var(--White);
+   display: flex;
+   border-radius: 15px;
+   width: 45rem;
+   height: 27rem;
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+.left {
+   width: 50%;
+   height: 100%;
+   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.left .result {
+   color: var(--Light_lavender);
+   margin: 20px 0;
+   font-size: 1.2rem;
+}
+.left .score {
+   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   width: 10rem;
+   height: 10rem;
+   margin: 1rem;
+}
+.score p {
+   font-size: 3rem;
+   color: var(--White);
+   font-weight: 600;
+}
+.score span {
+   color: var(--Light_lavender);
+}
+.think {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1rem;
+}
+.think h2 {
+   margin-bottom: 1rem;
+   color: var(--White);
+}
+.think p {
+   text-align: center;
+   color: var(--Light_lavender);
+   width: 61%;
+}
+
+.right {
+   width: 50%;
+   height: 100%;
+   background-color: var(--White);
+   border-radius: 15px;
+   padding: 2rem;
+}
+.right h2 {
+   color: var(--Dark_gray_blue);
+   font-weight: 800;
+   margin-bottom: 1rem;
+}
+.right .note {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 8px;
+   height: 3rem;
+   margin-bottom: 1rem;
+}
+.note span {
+   color: var(--Dark_gray_blue);
+   font-weight: 800;
+   margin-right: .5rem;
+}
+.note span small {
+   color: rgb(139, 139, 139);
+   font-weight: 700;
+}
+.perf {
+   display: flex;
+   align-items: center;
+   margin-left: .5rem;
+}
+.perf img {
+   margin-right: 0.5rem;
+}
+.reaction {
+   background-color: rgb(255, 236, 239);
+}
+.reaction .perf p {
+   color: var(--Light_red);
+   font-weight: 600;
+}
+
+.memory {
+   background-color: rgb(253, 253, 235);
+}
+.memory .perf p {
+   color: var(--Orangey_yellow);
+   font-weight: 600;
+}
+
+.verbal {
+   background-color: rgb(236, 253, 239);
+}
+.verbal .perf p {
+   color: var(--Green_teal);
+   font-weight: 600;
+}
+
+.visual {
+   background-color: rgb(237, 237, 252);
+}
+.visual .perf p {
+   color: var(--Cobalt_blue);
+   font-weight: 600;
+}
+.right button{
+   background-color: var(--Dark_gray_blue);
+   color: var(--White);
+   width: 100%;
+   padding: .8rem;
+   margin-top: 1rem;
+   font-weight: 700;
+   border-radius: 18px;
+}
