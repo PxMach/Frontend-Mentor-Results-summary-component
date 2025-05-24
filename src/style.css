@@ -59,6 +59,7 @@ body {
    color: var(--Light_lavender);
    margin: 20px 0;
    font-size: 1.2rem;
+   font-weight: 600;
 }
 .left .score {
    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -119,7 +120,7 @@ body {
 .note span {
    color: var(--Dark_gray_blue);
    font-weight: 800;
-   margin-right: .5rem;
+   margin-right: 0.5rem;
 }
 .note span small {
    color: rgb(139, 139, 139);
@@ -128,7 +129,7 @@ body {
 .perf {
    display: flex;
    align-items: center;
-   margin-left: .5rem;
+   margin-left: 0.5rem;
 }
 .perf img {
    margin-right: 0.5rem;
@@ -164,12 +165,42 @@ body {
    color: var(--Cobalt_blue);
    font-weight: 600;
 }
-.right button{
+.right button {
    background-color: var(--Dark_gray_blue);
    color: var(--White);
    width: 100%;
-   padding: .8rem;
+   padding: 0.8rem;
    margin-top: 1rem;
    font-weight: 700;
    border-radius: 18px;
+   border: none;
+   cursor: pointer;
+}
+.right button:hover {
+   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 376px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+   }
+   .left {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 0px 15px 15px;
+   }
+   .think p {
+      text-align: center;
+      color: var(--Light_lavender);
+      width: 70%;
+      margin-bottom: 2rem;
+   }
+   .right {
+      width: 100%;
+      height: 100%;
+   }
 }
